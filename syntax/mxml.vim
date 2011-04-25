@@ -300,7 +300,6 @@ endif
 
 syn keyword mxmlSpecialTagName  contained mx:Script mx:Style
 if main_syntax != 'actionscript' || exists("actionscript")
-  se nonu
   syn include @mxmlScript syntax/actionscript.vim
   unlet b:current_syntax
   syn region  actionscript start=+<!\[CDATA\[+ keepend end=+]]>+ contains=@mxmlScript
